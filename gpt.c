@@ -48,7 +48,7 @@ int main() {
         pthread_mutex_init(&lock, NULL);
 
         for (int i = 0; i < NUM_THREADS; i++) {
-            threadIds[i] = i + 3;  // Starting from 3 for the first thread
+            threadIds[i] = i + 3; 
             pthread_create(&threads[i], NULL, checkPrime, (void *)&threadIds[i]);
         }
 
